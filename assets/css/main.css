@@ -253,6 +253,43 @@ a:hover, a:focus       { color: #ffa500; text-decoration: none; }
 
 
 /* ============================================================
+   HEADING CLASSES
+   ============================================================ */
+
+#heading h1 { margin-top: 5rem; text-align: center; margin-bottom: 0.9rem; }
+
+#heading h2 { color: #666666; letter-spacing: 1px; font-size: 0.9rem; font-weight: 400; text-align: center; margin-top: 16px; margin-bottom: 2.2rem; }
+
+#heading p { padding-bottom: 0.5rem; }
+
+#heading p > a { border-bottom: solid 1px #474e53; }
+
+#heading p > a:hover,
+#heading p > a:focus { border-bottom: solid 1px #ffa500; }
+
+.browser .content  { overflow: auto; height: 25rem; }
+
+
+/* ============================================================
+   EMAIL CLASSES
+   ============================================================ */
+
+#email h1 { font-size: 1.65rem; margin-top: 1.5rem; text-align: center; margin-bottom: 0.9rem; }
+
+#email p { padding: 0 1.5rem 3.85rem 1.5rem; }
+
+#email p > a { border-bottom: solid 1px #474e53; }
+
+#email p > a:hover,
+#email p > a:focus { border-bottom: solid 1px #ffa500; }
+
+#email .carousel-control { position: absolute; font-size: 5rem; font-weight: 300; top: 11rem; width: 20rem; height: 0; color: #474e53; opacity: 1; text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
+
+#email .carousel-control:hover,
+#email .carousel-control:focus { color: #ffa500; opacity: 1; }
+
+
+/* ============================================================
    RESPONSIVE CLASSES
    ============================================================ */
 
