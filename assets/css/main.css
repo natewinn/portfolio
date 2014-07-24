@@ -312,6 +312,8 @@ a:hover, a:focus       { color: #ffa500; text-decoration: none; }
 
 #web-design .col-md-8 { padding-top: 1.25rem; }
 
+#web-design .col-md-4 { padding-bottom: 1.25rem; }
+
 #web-design h1 { font-size: 1.25rem; margin-top: 1.5rem; margin-bottom: 0.5rem; font-weight: 700; }
 
 #web-design p { padding: 0 1.5rem 1.5rem 1.5rem; text-align: left; }
@@ -320,7 +322,7 @@ a:hover, a:focus       { color: #ffa500; text-decoration: none; }
 
 #web-box img { padding-bottom: 20px; }
 
-.browser .web-content  { border: solid 1px #eff1f4; border-radius: 0 0 5px 5px; overflow: auto; height: 42rem; }
+.browser .web-content  { border: solid 1px #eff1f4; border-radius: 0 0 5px 5px; overflow: auto; height: 37rem; }
 
 
 /* ============================================================
