@@ -256,16 +256,22 @@ a:hover, a:focus       { color: #ffa500; text-decoration: none; }
    HEADING CLASSES
    ============================================================ */
 
-#heading h1 { margin-top: 5rem; text-align: center; margin-bottom: 0.9rem; }
+#heading { text-align: center; }
 
-#heading h2 { color: #666666; letter-spacing: 1px; font-size: 0.9rem; font-weight: 400; text-align: center; margin-top: 16px; margin-bottom: 2.2rem; }
+#heading h1 { margin-top: 5rem; margin-bottom: 0.9rem; }
 
-#heading p { padding-bottom: 0.5rem; }
+#heading h2 { color: #666666; letter-spacing: 1px; font-size: 0.9rem; font-weight: 400; margin-top: 16px; margin-bottom: 2.2rem; }
+
+#heading p { padding-bottom: 0.5rem; text-align: left; }
 
 #heading p > a { border-bottom: solid 1px #474e53; }
 
 #heading p > a:hover,
 #heading p > a:focus { border-bottom: solid 1px #ffa500; }
+
+#heading .btn-lg { margin: 1.1rem 0; }
+
+#heading .fa-long-arrow-right { font-size: 0.75rem; padding-left: 0.5rem; }
 
 .browser .content  {overflow: auto; height: 25rem; }
 
@@ -300,11 +306,21 @@ a:hover, a:focus       { color: #ffa500; text-decoration: none; }
    WEBSITE CLASSES
    ============================================================ */
 
-#web-design h1 { font-size: 1.3rem; margin-top: 1.5rem; text-align: center; margin-bottom: 0.9rem; }
+#web-design { text-align: center; }
 
-#web-design p { padding: 0 1.5rem 0.85rem 1.5rem; }
+#web-design .text-box { padding: 0.65rem 0 0.8rem 0; }
 
-.browser .web-content  { border: solid 1px #eff1f4; border-radius: 0 0 5px 5px; overflow: auto; height: 43.25rem; }
+#web-design .col-md-8 { padding-top: 1.25rem; }
+
+#web-design h1 { font-size: 1.25rem; margin-top: 1.5rem; margin-bottom: 0.5rem; font-weight: 700; }
+
+#web-design p { padding: 0 1.5rem 1.5rem 1.5rem; text-align: left; }
+
+#web-design .browser { padding-bottom: 0; }
+
+#web-box img { padding-bottom: 20px; }
+
+.browser .web-content  { border: solid 1px #eff1f4; border-radius: 0 0 5px 5px; overflow: auto; height: 42rem; }
 
 
 /* ============================================================
