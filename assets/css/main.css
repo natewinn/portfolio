@@ -9,7 +9,7 @@ body                    { font-family: "Lato"; font-weight: 400; font-size: 0.95
                           -moz-osx-font-smoothing: grayscale;
                           -webkit-overflow-scrolling: touch; } 
 
-hr                      { display: block; margin: 0.8rem 0; position: relative; left: 10%; width: 80%; border-top: 0; height: 0.05rem; background: #ccc; content: " "; }
+hr                      { display: block; margin: 0.8rem 0; position: relative; left: 10%; width: 80%; border-top: 0; height: 0.1rem; background: #ccc; content: " "; }
 
 h1, h2, h3, h4, h5, h6  { font-family: "Lato"; letter-spacing: 0.05rem; }
 
@@ -39,7 +39,7 @@ a:hover                 { color: #FFA500; text-decoration: none; }
 
 .btn-primary            { border-color: #565E64; background: #5F686F; }
 
-.btn-primary:hover      { color: #FFF; background-color: #434A4F; border-color: #3A4044;
+.btn-primary:hover      { color: #FFF; background-color: #3A4044; border-color: #3A4044;
                           -webkit-transition: all 0.4s ease 0s;
                           -moz-transition: all 0.4s ease 0s;
                           -ms-transition: all 0.4s ease 0s;
@@ -65,13 +65,13 @@ a:hover                 { color: #FFA500; text-decoration: none; }
 
 .navbar-brand { font-weight: 700; font-size: 1.12rem; margin: 0.612rem 0; padding: 0.78rem 0.834rem 0.834rem 1.278rem; letter-spacing: 0.05rem; }
 
-.navbar-inverse .navbar-brand { color: #434A4F; }
+.navbar-inverse .navbar-brand { color: #3A4044; }
 
-.navbar-inverse .navbar-brand:hover { color: #434A4F; }
+.navbar-inverse .navbar-brand:hover { color: #3A4044; }
 
 .nav > li { display: block; }
 
-.navbar-nav > li > a { padding: 1.389rem 0 1.389rem 1.95rem; font-weight: 400; }
+.navbar-nav > li > a { padding: 1.289rem 0 1.289rem 1.95rem; font-weight: 400; }
 
 .navbar-inverse .navbar-nav > li > a { color: #FFA500; border-bottom: 0.1rem #CCC solid; }
 
@@ -85,7 +85,8 @@ a:hover                 { color: #FFA500; text-decoration: none; }
 
 .navbar-inverse .navbar-collapse { border-color: transparent; }
 
-.navbar-collapse { box-shadow: inset 0 0 0 rgba(0, 0, 0, 0); padding: 0; max-height: 8.278rem; }
+.navbar-fixed-top .navbar-collapse,
+.navbar-fixed-bottom .navbar-collapse { box-shadow: inset 0 0 0 rgba(0, 0, 0, 0); padding: 0; max-height: 7.91rem; }
 
 .navbar-toggle { position: relative; padding: 0.5rem 0.56rem; margin-top: 1rem; margin-right: 2.5rem; margin-bottom: 1.78rem; background-color: transparent; border: transparent; }
 
@@ -96,7 +97,7 @@ a:hover                 { color: #FFA500; text-decoration: none; }
 
 #nav-toggle { position: absolute; left: 50%; top: 50%; padding: 0.389rem 0 0 0; }
 
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after { border-radius: 0.1rem; height: 0.22rem; width: 1.945rem; background: #434A4F; position: absolute; display: block; content: ''; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after { border-radius: 0.1rem; height: 0.23rem; width: 1.945rem; background: #3A4044; position: absolute; display: block; content: ''; }
 
 #nav-toggle span:before { top: -10px; }
 
@@ -123,8 +124,9 @@ a:hover                 { color: #FFA500; text-decoration: none; }
    BANNER CLASSES
    ============================================================ */
 
+
 #banner { width: 100%; height: 60%; margin-top:4.25rem; text-align: center; display: table;  
-          background: url(../img/banner.jpg) no-repeat center top / cover; background-attachment: fixed; }  
+          background: url(../img/banner.jpg) no-repeat center top / cover; background-attachment: scroll; }  
 
 #banner .col-md-12 { float: none; }
 
@@ -132,9 +134,9 @@ a:hover                 { color: #FFA500; text-decoration: none; }
 
 #banner h1 { display: block; color: #FFF; letter-spacing: 0.11rem; font-size: 1.25rem; font-weight: 400; }
 
-#banner h1.box-in { border: 0.12rem solid #FFF; padding: 0.945rem 0.11rem 0.945rem 0.33rem; position: relative; display: inline-block; }
+#banner h1.box-in { border: 0.12rem solid #FFF; padding: 0.945rem 0.2rem 0.945rem 0.4rem; position: relative; display: inline-block; }
 
-#banner h2 { display: block; color: #FFF; letter-spacing: 0.1rem; font-size: 0.9rem; font-weight: 400; margin-top: 0.56rem; line-height: 1.5rem; }
+#banner h2 { display: block; color: #FFF; font-size: 1rem; font-weight: 400; margin-top: 0.56rem; line-height: 1.5rem; }
 
 
 /* ============================================================
@@ -143,11 +145,11 @@ a:hover                 { color: #FFA500; text-decoration: none; }
 
 #about { padding: 2.23rem 0; text-align: center; background-color: #FFF; }
 
-#about h2 { color: #434A4F; margin: 0; letter-spacing: 0.1rem; font-size: 1.23rem; font-weight: 700; text-align: left; padding: 1.12rem 0 1.12rem 0; }
+#about h2 { color: #3A4044; margin: 0; letter-spacing: 0.1rem; font-size: 1.23rem; font-weight: 700; text-align: left; padding: 1.12rem 0 1.12rem 0; }
 
 #about p { margin-left: 0; margin-right: 0; padding-bottom: 0.834rem; text-align: left; font-size: 1rem; }
 
-#about p > a { border-bottom: solid 0.1rem #434A4F; padding-bottom: 0.1rem; }
+#about p > a { border-bottom: solid 0.1rem #3A4044; padding-bottom: 0.1rem; }
 
 #about p > a:hover { border-bottom: solid 0.1rem #FFA500; }
 
@@ -175,11 +177,11 @@ a:hover                 { color: #FFA500; text-decoration: none; }
 
 #web-apps h1 { font-size: 1.5rem; text-align: center; }
     
-#web-apps h2 { color: #434A4F; margin-top: 1.945rem; letter-spacing: 0.1rem; font-size: 1.23rem; font-weight: 700; text-align: left; padding: 1.12rem 0 1.12rem 0; }
+#web-apps h2 { color: #3A4044; margin-top: 1.945rem; letter-spacing: 0.1rem; font-size: 1.23rem; font-weight: 700; text-align: left; padding: 1.12rem 0 1.12rem 0; }
 
 #web-apps p { margin-left: 0; margin-right: 1.67rem; padding-bottom: 0; text-align: left; font-size: 1rem; }
 
-#web-apps p > a { border-bottom: solid 0.1rem #434A4F; text-align: center; }
+#web-apps p > a { border-bottom: solid 0.1rem #3A4044; text-align: center; }
 
 #web-apps p > a:hover { border-bottom: solid 0.1rem #FFA500; }
 
@@ -192,9 +194,9 @@ a:hover                 { color: #FFA500; text-decoration: none; }
    COROUSEL CLASSES
    ============================================================ */
 
-.carousel-control { position: absolute; font-size: 2rem; font-weight: 300; top: 10rem; width: 8rem; height: 0; color: #434A4F; opacity: 1; text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
+.carousel-control { position: absolute; font-size: 2rem; font-weight: 300; top: 10rem; width: 8rem; height: 0; color: #3A4044; opacity: 1; text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
 
-.carousel-control:hover { color: #434A4F; opacity: 1; }
+.carousel-control:hover { color: #3A4044; opacity: 1; }
 
 
 /* ============================================================
@@ -209,7 +211,7 @@ a:hover                 { color: #FFA500; text-decoration: none; }
 
 #portfolio h1 { font-size: 1.5rem; }
 
-#portfolio p { z-index: 100; text-align: center; color: #434A4F; font-weight: 400; font-size: 0.85rem; letter-spacing: 0.1rem; }
+#portfolio p { z-index: 100; text-align: center; color: #3A4044; font-weight: 400; font-size: 0.85rem; letter-spacing: 0.1rem; }
 
 
 /* ============================================================
@@ -225,20 +227,13 @@ a:hover                 { color: #FFA500; text-decoration: none; }
            -o-transition: all 0.7s ease 0s; 
            transition: all 0.7s ease 0s; }
 
-.expand { z-index: 100; text-align: center; color: #434A4F; font-weight: 700; letter-spacing: 0.1rem; font-size: 1.23rem; }
+#effect .heading { text-align: center; color: #3A4044; font-weight: 700; font-size: 1.23rem; }
 
-.expand:hover { color: #FFA500;
-                -webkit-transition: all 0.4s ease 0s;
-                -moz-transition: all 0.4s ease 0s;
-                -ms-transition: all 0.4s ease 0s;
-                -o-transition: all 0.4s ease 0s;
-                transition: all 0.4s ease 0s; }
-
-a.close-overlay { display: block; position: absolute; top: 0; right: 0; z-index: 100; width: 1.75rem; height: 1.75rem; margin: 0.75rem 0.75rem 0 0; text-align: center; background-color: #000; cursor: pointer; background: transparent; }
+.close-overlay { display: block; position: absolute; top: 0; right: 0; z-index: 100; width: 1.75rem; height: 1.75rem; background-color: transparent; font-size: 2rem; font-weight: 700; color: #FFA500; }
 
 a.close-overlay.hidden { display: none; }
 
-#effect .overlay { top: 0; bottom: 2.22rem; opacity: 0; left: 0.834rem; right: 0.834rem; padding-top: 8.34rem; }
+#effect .overlay { top: 0; bottom: 0; opacity: 0; left: 0.834rem; right: 0.834rem; padding: 42.5% 0; }
 
 #effect .thumb:hover .overlay { opacity: 1; }
 
@@ -247,13 +242,13 @@ a.close-overlay.hidden { display: none; }
    FOOTER CLASSES
    ============================================================ */
 
-#footer { background: #434A4F; margin-top: 0; padding-top: 0.834rem; padding-bottom: 0.834rem; text-align: center; }
+#footer { background: #3A4044; margin-top: 0; padding-top: 0.834rem; padding-bottom: 0.834rem; text-align: center; }
 
 #social i { font-size: 1.67rem; color: #FFA500; padding: 0.389rem 1rem 0.389rem; }
 
-#footer p {font-size: 0.8rem; color: #FFF; padding-top: 0.25rem; }
+#footer p {font-size: 0.8rem; color: #F1F2F2; padding-top: 0.25rem; }
 
-#footer p > a { color: #FFF; }
+#footer p > a { color: #F1F2F2; }
 
 #footer p > a:hover { color: #FFA500; }
 
@@ -264,48 +259,45 @@ a.close-overlay.hidden { display: none; }
 
 #heading { text-align: center; }
 
-#heading h1 { margin-top: 5rem; margin-bottom: 0.9rem; }
+#heading h1 { font-size: 1.75rem; margin-top: 7rem; }
 
-#heading h2 { color: #666666; letter-spacing: 1px; font-size: 0.9rem; font-weight: 400; margin-top: 16px; margin-bottom: 2.2rem; }
+#heading h2 { color: #666; letter-spacing: 0.1rem; font-size: 0.9rem; font-weight: 400; margin-top: 0.5rem; margin-bottom: 1.5rem; }
 
-#heading p { padding-bottom: 0.5rem; text-align: left; }
+#heading p { padding-bottom: 1.5rem; text-align: left; }
 
-#heading p > a { border-bottom: solid 1px #474e53; }
+#heading p > a { border-bottom: solid 1px #474E53; }
 
-#heading p > a:hover,
-#heading p > a:focus { border-bottom: solid 1px #FFA500; }
+#heading p > a:hover { border-bottom: solid 1px #FFA500; }
 
-#heading .btn-lg { margin: 1.1rem 0; }
+#heading .btn-lg { margin: 0 0 2.5rem 0; }
 
 #heading .fa-long-arrow-right { font-size: 0.75rem; padding-left: 0.5rem; }
 
-.browser .content  {overflow: auto; height: 25rem; }
+.browser .content  {overflow: auto; height: 12.5rem; }
+
+.browser .bar .addressbar .search { width: 100%; margin-left: 2%; text-align: left; } 
 
 
 /* ============================================================
    EMAIL CLASSES
    ============================================================ */
 
-#email h1 { font-size: 1.5rem; margin-top: 1.5rem; text-align: center; margin-bottom: 0.9rem; }
+#email h1 { font-size: 1.2rem; font-weight: 700; margin-top: 3.5rem; text-align: left; margin-bottom: 0.9rem; }
 
-#email p { padding: 0 1.5rem 3.85rem 1.5rem; }
+#email p { padding: 0 0 2rem 0; }
 
-#email p > a { border-bottom: solid 1px #474e53; }
+#email p > a { border-bottom: solid 1px #474E53; }
 
-#email p > a:hover,
-#email p > a:focus { border-bottom: solid 1px #FFA500; }
+#email .carousel-control { position: absolute; font-size: 2.5rem; font-weight: 300; top: 15rem; width: 15rem; height: 0; color: #474E53; opacity: 1; text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
 
-#email .carousel-control { position: absolute; font-size: 5rem; font-weight: 300; top: 11rem; width: 20rem; height: 0; color: #474e53; opacity: 1; text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
-
-#email .carousel-control:hover,
-#email .carousel-control:focus { color: #FFA500; opacity: 1; }
+#email .carousel-control:hover { color: #474E53; opacity: 1; }
 
 
 /* ============================================================
    LOGO CLASSES
    ============================================================ */
 
-#logo img { padding: 2rem 3.5rem 5rem 3.5rem; }
+#logo img { padding: 0 0 2.0rem 0; }
 
 
 /* ============================================================
@@ -320,22 +312,32 @@ a.close-overlay.hidden { display: none; }
 
 #web-design .col-md-4 { padding-bottom: 1.25rem; }
 
-#web-design h1 { font-size: 1.25rem; margin-top: 1.5rem; margin-bottom: 0.5rem; font-weight: 700; }
-
-#web-design p { padding: 0 1.5rem 1.5rem 1.5rem; text-align: left; }
-
 #web-design .browser { padding-bottom: 0; }
 
-#web-box img { padding-bottom: 20px; }
+#web-design h1 { font-size: 1.25rem; margin-top: 1.5rem; margin-bottom: 0.5rem; font-weight: 700; }
 
-.browser .web-content  { border: solid 1px #eff1f4; border-radius: 0 0 5px 5px; overflow: auto; height: 37rem; }
+#web-design p { padding: 0 0 1.5rem 0; text-align: left; }
 
+#web-design img { padding-bottom: 1.12rem; }
+
+.browser .web-content  { border: solid 1px #EFF1F4; border-radius: 0 0 5px 5px; overflow: auto; height: 12.5rem; }
+
+
+/* ============================================================
+   FOOTER CLASSES
+   ============================================================ */
+
+#bottom-nav { background: #F1F2F2; padding-top: 0.834rem; padding-bottom: 0.834rem; text-align: center; }
+
+#nav-icon i { font-size: 1.67rem; color: #3A4044; padding: 0.389rem 2rem 0.389rem; }
+
+#nav-icon i:hover { color: #FFA500; }
 
 /* ============================================================
    RESPONSIVE CLASSES
    ============================================================ */
 
-/* LANDSCAPE iPHONE
+/* iPHONE LANDSCAPE ONLY
 ---------------------------------------- */
 @media (min-width: 480px) and (max-width:767px){
 
@@ -346,9 +348,35 @@ a.close-overlay.hidden { display: none; }
 .md-imac { font-size: 0.35rem; }
 .carousel-control { font-size: 3rem; top: 5rem; width: 4rem; }
 
+#email-design .row { padding: 0 0.834rem; }
+#email .carousel-control { width: 26rem; }
+
+#nav-icon i { padding: 0.389rem 3rem 0.389rem; }
+
 }
 
-/* iPAD
+/* iPAD ONLY
+---------------------------------------- */
+@media (min-width: 768px) and (max-width: 1024px){
+
+#banner { height: 70%; margin-top: 2rem; }
+
+.md-imac { font-size: 0.45rem; }
+.carousel-control { font-size: 3.25rem; top: 7rem; width: 3.25rem; }
+
+#heading h1 { margin-top: 5rem; }
+#heading h2 { margin-bottom: 1.5rem; }
+#heading p { padding-bottom: 1.0rem; text-align: left; }
+
+#email .carousel-control { font-size: 4rem; top: 11rem; width: 4.75rem; }
+
+#email p { padding: 0 1.5rem 2.5rem 1.5rem; }
+
+#logo img { padding: 1.5rem 1.5rem 3.5rem 1.5rem; }
+
+}
+
+/* iPAD OR LARGER
 ---------------------------------------- */
 @media (min-width: 768px){
 
@@ -357,11 +385,10 @@ hr { display: block; margin: 0.8rem 0; position: relative; left: 30%; width: 40%
 .navbar-nav { float: right; }
 .navbar-logo { margin-left: 0; }
 .nav > li { display: inline-block; }
-.nav > li > a { padding: 25px 15px 25px 0; }
+.nav > li > a { padding: 25px 25px 25px 0; }
 .navbar-inverse .navbar-nav > li > a { border-bottom: 0; }
-.navbar-collapse.collapse { padding-bottom: 0; }
-
-#banner { height: 70%; margin-top: 2rem; }
+/*.navbar-collapse.collapse { padding-bottom: 0.5rem; }
+*/
 #banner h1 { font-size: 2rem; letter-spacing: 3px; padding: 20px 6px 20px 10px; }
 #banner h1.box-in { border: 3px solid #fff; }
 #banner h2 { font-size: 1.25rem; }
@@ -372,82 +399,34 @@ hr { display: block; margin: 0.8rem 0; position: relative; left: 30%; width: 40%
 #experience ul { padding-left: 30px; }
 
 #web-apps h1 { font-size: 1.75rem; }
+#web-apps h2 { padding: 0 0 0.65rem 0; margin-top: 0.45rem; }
 #web-apps p { padding-bottom: 15px; }
-#web-apps .btn-lg { margin-top: 0 }
-.carousel-control { font-size: 3rem; top: 7rem; width: 5rem; }
-.md-imac { font-size:.5rem; }
-
-#portfolio h1 { font-size: 1.75rem; }
-.design figcaption { padding: 20px 0 20px 15px;}
-.design figcaption h5 { letter-spacing: 1px; font-size: 12px; }
-}
-
-/* DESKTOP
----------------------------------------- */
-@media(min-width:992px){
-
-.navbar-inverse .navbar-nav > li > a { color: #434A4F; }
-
-.navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > li > a:focus { color: #FFA500; background-color: transparent; }
-
-#banner { height: 65%; margin-top: 1.5rem; }
-
 #web-apps .btn-lg { margin: 15px 15px 0 0; }
 
-.carousel-control { font-size: 3.5rem; top: 7.5rem; width: 7rem; }
-.carousel-control:hover,
-.carousel-control:focus { color: #FFA500; opacity: 1; }
+#portfolio h1 { font-size: 1.75rem; }
 
-#social i { color: #f5f5f5; }
-#social i:hover,
-#social i:focus { color: #FFA500; }
+.browser .content  {overflow: auto; height: 25rem; }
 
-/*.design figure { margin-bottom: 1rem; position: relative }
-.design figure img { width: 100%; display: block; position: relative }
-.design figcaption { position: absolute; top: 0; left: 0; padding: 20px; color: #fff; background: #FFA500 }
-.design figcaption h5 { margin: 0; padding-top: 0; padding-left: 20px; padding-bottom: 5px; font-size: 14px; color: #fff; font-weight: 700; text-align: left; letter-spacing: 2px }
-.design figcaption a { text-align: left; padding: 5px 10px; margin-left: 20px; display: inline-block; background: #5f686f; color: #fff; font-size: 13px }
+#email h1 { font-size: 1.5rem; margin-top: 1.5rem; text-align: center; margin-bottom: 0.9rem; }
 
-.caption figure { overflow: hidden }
-.caption figcaption a { position: absolute; top:10px; bottom: 10px; right: 30px }
-.caption figure img { -webkit-transition: -webkit-transform 0.4s;
-                      -moz-transition: -moz-transform 0.4s;
-                      transition: transform 0.4s; }
-.no-touch .caption figure:hover img,
-.mask figure.cs-hover img { transform: translateY(-30px);
-                            -webkit-transform: translateY(-30px);
-                            -moz-transform: translateY(-30px);
-                            -ms-transform: translateY(-30px); }
-.caption figcaption { height: 50px; width: 100%; top: auto; bottom: 0; opacity: 0;
-                      -webkit-transform: translateY(100%);
-                      -moz-transform: translateY(100%);
-                      -ms-transform: translateY(100%);
-                      transform: translateY(100%);
-                      -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
-                      -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
-                      transition: transform 0.4s, opacity 0.1s 0.3s; }
+#nav-icon i { padding: 0.389rem 3rem 0.389rem; }
 
-.no-touch .caption figure:hover figcaption,
-.mask figure.cs-hover figcaption { opacity: 1;
-                                   -webkit-transform: translateY(0px);
-                                   -moz-transform: translateY(0px);
-                                   -ms-transform: translateY(0px);
-                                   transform: translateY(0px);
-                                   -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
-                                   -moz-transition: -moz-transform 0.4s, opacity 0.1s;
-                                   transition: transform 0.4s, opacity 0.1s; }
-}*/
+}
 
-/* LARGE DESKTOP
+/* DESKTOP ONLY
 ---------------------------------------- */
-@media(min-width:1200px){
+@media (min-width: 1025px){
 
-/* ============================================================
-   ROTATE LOGO CLASSES
-   ============================================================ */
+.navbar-inverse .navbar-nav > li > a { color: #3A4044; }
+.navbar-inverse .navbar-nav > li > a:hover { color: #FFA500; }
 
 #rotate-logo { display:block; }
+
+#rotate-logo img { display:block;
+                   -webkit-transition: all 1s ease-in-out;
+                   -moz-transition: all 1s ease-in-out; 
+                   -o-transition: all 1s ease-in-out; 
+                   -ms-transition: all 1s ease-in-out; }
 
 #rotate-logo:hover img { backface-visibility:hidden;
                          -webkit-transform: rotate(90deg); 
@@ -456,12 +435,6 @@ hr { display: block; margin: 0.8rem 0; position: relative; left: 30%; width: 40%
                          -ms-transform: rotate(90deg); 
                          -webkit-backface-visibility:hidden; }
 
-#rotate-logo img { display:block;
-                   -webkit-transition: all 1s ease-in-out;
-                   -moz-transition: all 1s ease-in-out; 
-                   -o-transition: all 1s ease-in-out; 
-                   -ms-transition: all 1s ease-in-out; }
-
 #rotate-logo .navbar-inverse .navbar-brand:hover { backface-visibility:hidden;
                                                    -webkit-transform: rotate(90deg); 
                                                    -moz-transform: rotate(90deg); 
@@ -469,7 +442,39 @@ hr { display: block; margin: 0.8rem 0; position: relative; left: 30%; width: 40%
                                                    -ms-transform: rotate(90deg); 
                                                    -webkit-backface-visibility:hidden; }
 
-#banner { height: 85%; margin-top: 1rem; }
+#banner { background-attachment: fixed; height: 65%; margin-top: 1.5rem; } 
 
 #experience li { font-size: 0.9rem }
+
+.md-imac { font-size:.5rem; }
+.carousel-control { font-size: 3.5rem; top: 7.5rem; width: 7rem; }
+.carousel-control:hover { color: #FFA500; opacity: 1; }
+
+#effect .thumb:hover .overlay { cursor: pointer; }
+
+#social i { color: #F1F2F2; }
+#social i:hover { color: #FFA500; }
+
+#logo img { padding: 2rem 3.5rem 5rem 3.5rem; }
+
+#heading h1 { margin-top: 5rem; margin-bottom: 0.9rem; font-size: 2rem; }
+
+#heading h2 { margin-top: 0.89rem; margin-bottom: 2.2rem; }
+
+#email p { padding: 0 1.5rem 3.85rem 1.5rem; }
+
+#email p > a:hover { border-bottom: solid 1px #FFA500; }
+
+#email .carousel-control:hover { color: #FFA500; }
+
+#email .carousel-control { position: absolute; font-size: 5rem; font-weight: 300; top: 11rem; width: 20rem; height: 0; color: #474E53; opacity: 1; text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
+
+.browser .web-content  { border: solid 1px #Eff1F4; border-radius: 0 0 5px 5px; overflow: auto; height: 37rem; }
+
+#web-design p { padding: 0 1.5rem 1.5rem 1.5rem; text-align: left; }
+
+/*#web-box img { padding-bottom: 20px; }*/
+
+#web-design img { padding-bottom: 1.12rem; }
+
 }
