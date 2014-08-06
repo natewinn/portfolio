@@ -1,5 +1,4 @@
-# Nate Winn - Portfolio
-=======================
+# My Personal Portfolio
 
 Hi, there!
 
