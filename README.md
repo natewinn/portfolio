@@ -8,5 +8,4 @@ In this repo, you can take a "peek under the hood" of the latest iteration of my
 
 Connect with me on [Twitter](http://twitter.com/natewinn) or [LinkedIn](http://linkedin.com/in/natewinn) and let me know what you think!
 
-Cheers,
 -Nate Winn
